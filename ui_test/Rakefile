@@ -3,7 +3,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 Cucumber::Rake::Task.new(:features) do |t|
-  t.profile = 'default'
+  t.cucumber_opts = '*.feature'
 end
 
 task :default => :features
